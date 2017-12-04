@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*整体*/
+.box {
+	width: 1200px;
+	font-family: "宋体";
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+/*测试主体*/
+.testMain {
+	width: 900px;
+}
+
+/*题型标题区域*/
+.testTitle {
+	overflow: hidden;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 10px;
+	border-bottom: 2px solid cadetblue;
+}
+
+/*题型标题*/
+.testTitle-name {
+	float: left;
+	margin-right: 10px;
+	color: cadetblue;
+	font-weight: bold;
+}
+
+/*题型副标题*/
+.testTitle-con {
+	float: left;
+	font-size: 14px;
+	color: #999;
+}
+
+/*试题区域*/
+.testContent {
+	overflow: hidden;
+	list-style-position: inside;
+	list-style-type: decimal-leading-zero;
+}
+
+/*单个试题*/
+.testList {
+	padding: 10px;
+	margin: 10px 1px 20px;
+	box-shadow: 1px 1px 5px #999;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+/*单个试题标题*/
+.testList > h3 {
+	margin: 0 30px;
+	margin-top: -29px;
+	font-size: 16px;
+	line-height: 40px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	color: #666;
+}
+
+/*单个试题答案列表*/
+.testList > ol {
+	list-style-type: upper-latin;
+	list-style-position: outside;
+	padding: 0 30px;
+	font-size: 14px;
+	color: #666;
+}
+
+/*单个选项*/
+.testList > ol > li {
+	margin-left: 40px;
+	line-height: 40px;
+	text-align: justify;
+}
+.testList > ol > li:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+/*复选单选框*/
+.testList > ol input {
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 13px;
+	margin-left: -40px;
+}
+
+/*右侧固定题目序号*/
+.testAsider {
+	width: 280px;
+	position: fixed;
+	left: 50%;
+	margin-left: 320px;
+	top: 20px;
+}
+
+/*序号标题*/
+.testAsider dt {
+	height: 40px;
+	line-height: 40px;
+	background-color: cadetblue;
+	color: white;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+.testAsider dd {
+	background-color: white;
+	overflow: hidden;
+}
+
+/*序号框*/
+.listNum {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	padding: 6px;
+}
+
+/*单个序号*/
+.listNum > a {
+	float: left;
+	border: 1px solid #eee;
+	text-align: center;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	margin: 4px;
+	text-decoration: none;
+	color: cadetblue;
+}
+.listNum > a:hover {
+	background-color: #eee;
+}
+.listNum > a.active {
+	background-color: cadetblue;
+	color: white;
+}
+
+/*底部固定提交*/
+.testSub {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	width: 900px;
+	height: 50px;
+	margin-left: -600px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+
+/*提交按钮*/
+.testSub input {
+	width: 100px;
+	height: 48px;
+	border: none;
+	float: right;
+	background-color: cadetblue;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+.testSub input:hover {
+	background-color: steelblue;
+}
+.timeOut{
+	text-align: center;
+	font-size: 30px;
+	line-height: 48px;
+	font-family: "楷体";
+	font-weight: bold;
+	color: firebrick;
+}
+/*考试时间*/
+.testTime {
+	float: left;
+	line-height: 48px;
+	color: darkred;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	margin-left: 20px;
+}
+.testTime::before {
+	content: "剩余时间: ";
+	font-family: "微软雅黑";
+	font-size: 20px;
+	vertical-align: middle;
+}

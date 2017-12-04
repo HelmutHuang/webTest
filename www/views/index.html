@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>在线测试</title>
+<link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+<div class="box">
+<form class="testMain" method="post" action="http://localhost/user">
+	<div class="testTitle">
+		<div class="testTitle-name">单选题</div>
+		<div class="testTitle-con" data-type="radio"></div>
+	</div>
+	<ul class="testContent" id="radio">
+		<li class="testList">
+			<h3>在生产管理信息系统中，下列操作步骤能正确将工单推进流程的是（ ）</h3>
+			<ol>
+				<li>
+					<input type="radio" value="1"> 在工具栏中点击“workflow”标签
+				</li>
+				<li>
+					<input type="radio" value="2"> 在缺陷单界面中点击“推进流程”按钮
+				</li>
+				<li>
+					<input type="radio" value="3"> 在缺陷单界面中点击“提交”按钮
+				</li>
+				<li>
+					<input type="radio" value="4"> 后台启动流程推进
+				</li>
+			</ol>
+		</li>
+		<li class="testList">
+			<h3>在营销系统中查询客户有无欠费、余额及抄表数据接待客户时应做到哪些最基本的礼仪？</h3>
+			<ol>
+				<li>
+					<input type="radio" value="1"> 在工具栏中点击“workflow”标签
+				</li>
+				<li>
+					<input type="radio" value="2"> 在缺陷单界面中点击“推进流程”按钮
+				</li>
+				<li>
+					<input type="radio" value="3"> 在缺陷单界面中点击“提交”
+				</li>
+				<li>
+					<input type="radio" value="4"> 后台启动流程推进
+				</li>
+			</ol>
+		</li>
+	</ul>
+	<div class="testTitle">
+		<div class="testTitle-name">多选题</div>
+		<div class="testTitle-con" data-type="checkbox"></div>
+	</div>
+	<ul class="testContent" id="checkbox">
+		<li class="testList">
+			<h3>请在下列选项中选择正确进入电力营销系统网址</h3>
+			<ol>
+				<li>
+					<input type="checkbox" value="1"> 在工具栏中点击“workflow”标签
+				</li>
+				<li>
+					<input type="checkbox" value="2"> 在缺陷单界面中点击“推进流程”按钮
+				</li>
+				<li>
+					<input type="checkbox" value="3"> 在缺陷单界面中点击“提交”按钮
+				</li>
+				<li>
+					<input type="checkbox" value="4"> 后台启动流程推进
+				</li>
+			</ol>
+		</li>
+		<li class="testList">
+			<h3>请在下列选项中选择正确进入电力营销系统网址</h3>
+			<ol>
+				<li>
+					<input type="checkbox" value="1"> 在工具栏中点击“workflow”标签
+				</li>
+				<li>
+					<input type="checkbox" value="2"> 在缺陷单界面中点击“推进流程”按钮
+				</li>
+				<li>
+					<input type="checkbox" value="3"> 在缺陷单界面中点击“提交”按钮
+				</li>
+				<li>
+					<input type="checkbox" value="4"> 后台启动流程推进
+				</li>
+			</ol>
+		</li>
+		<li class="testList">
+			<h3>请在下列选项中选择正确进入电力营销系统网址</h3>
+			<ol>
+				<li>
+					<input type="checkbox" value="1"> 在工具栏中点击“workflow”标签
+				</li>
+				<li>
+					<input type="checkbox" value="2"> 在缺陷单界面中点击“推进流程”按钮
+				</li>
+				<li>
+					<input type="checkbox" value="3"> 在缺陷单界面中点击“提交”按钮
+				</li>
+				<li>
+					<input type="checkbox" value="4"> 后台启动流程推进
+				</li>
+			</ol>
+		</li>
+	</ul>
+	<div class="testSub">
+		<div class="testTime"></div>
+		<input id="sub" type="submit" value="提 交" title="提交前要三思啊~">
+	</div>
+</form>
+<div class="testAsider">
+	<dl>
+		<dt>单选题</dt>
+		<dd class="listNum" data-type="radio" id="radioList"></dd>
+		<dt>多选题</dt>
+		<dd class="listNum" data-type="checkbox" id="checkboxList"></dd>
+		<button id="GM">清空数据</button>
+	</dl>
+</div>
+</div>
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>
